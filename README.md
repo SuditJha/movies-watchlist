@@ -19,3 +19,12 @@ The Frontend Developer Career Path aims to teach you everything you need to beco
 - [Become a Scrimba Pro member](https://scrimba.com/pricing)
 
 Happy Coding!
+
+
+[OMDB API](https://www.omdbapi.com/)
+
+[Figma File](https://www.figma.com/file/jhFRdFIdHpRxsDznNXtpXw/Movie-Watchlist?type=design&node-id=2-17&mode=design&t=ZU08Dyk4vK9v8O8U-0)
+
+![Image](<images/requirements.png>) 
+
+![Image](<images/topics.png>)
