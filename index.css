@@ -7,13 +7,21 @@ html, body {
 main{
     background-image: url(images/image.png);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
 div.top{
+    /* border: 2px solid ; */
     color: #fff;
     padding: 2em;
     display: flex;
+    text-shadow: 0 0 20px lightgray;
     justify-content: space-between;
     align-items: center;
 }
@@ -27,4 +35,40 @@ div.top>#my-watchlist-btn{
     background: none;
     color: white;
     border: none;
+}
+
+
+.search{
+    max-width: 600px;
+    margin: 0 auto 0;
+    padding:.5em;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border: 2px solid #adb5bd;
+    border-radius: 5px;
+    
+}
+
+.search>.input-container>.icon{
+    color: grey;
+}
+.input-container{
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+}
+.search>.input-container>#search-input{
+    display: inline-block;
+    flex-grow:1;
+    border: none;
+}
+
+.search>#search-btn{
+  border: none;
+  background-color: #fff;
+  font-family: Inter sans-serif;
+  font-size: 1.2rem;
+  color: #adb5bd;
 }
