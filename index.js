@@ -1,13 +1,33 @@
-// http://www.omdbapi.com/?i=tt3896198&apikey=7481d8d4
-// http://www.omdbapi.com/?t=Avengers
-// 
-// http://www.omdbapi.com/?apikey=7481d8d4&t=avengers
+const searchBtn = document.getElementById('search-btn')
 
-// fetch('https://www.omdbapi.com/?apikey=7481d8d4&t=avengers')
-//     .then( res => res.json())
-//     .then( data => {
-//         console.log(data)
-//     })
+// console.log()
+
+
+searchBtn.addEventListener('click', handleSearch)
+
+function handleSearch() {
+    const searchInput = document.getElementById('search-input')
+    fetch(`https://www.omdbapi.com/?apikey=7481d8d4&t=${searchInput.value}`)
+        .then( res => res.json())
+        .then( data => {
+            renderMovie(data)
+        })
+    searchInput.value = ''
+}
+
+
+function renderMovie(movieData) {
+    // title, runtime, genre, poster, imdbRating, plot
+    const title = movieData.Title
+    const length = movieData.Runtime
+    const genre = movieData.Genre 
+    const poster = movieData.Poster 
+    const plot = movieData.plot
+    const rating = movieData.imdbRating
+    console.log(title)
+
+}
+
 
 
 
