@@ -1,26 +1,54 @@
-<html>
-    <head>
-        <title>Watchlist</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <main>
-            <div class="top">
-                <h1 class="title">Find your film</h1>
-                <button id="my-watchlist-btn">My Watchlist</button>
-            </div>
-            <div>
-                <input 
-                type="text"
-                placeholder="Search for a movie"
-                >
-            </div>
-        </main>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Watchlist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main>
+      <section class="header">
+        <div class="top">
+          <h1 class="title">Find your film</h1>
+          <a href="#" id="my-watchlist-btn">My Watchlist</a>
+        </div>
 
-        <script src="index.js"></script>
-    </body>
+        <div class="search" id="search">
+          <div class="input-container">
+            <i class="icon fa-solid fa-magnifying-glass"></i>
+            <input
+              id="search-input"
+              type="text"
+              placeholder="Search for a movie"
+            />
+          </div>
+          <button id="search-btn">Search</button>
+        </div>
+      </section>
+
+      <section class="movies">
+        <div class="movie-container" id="movie-container">
+          <img class="film-icon" src="images/film.svg" />
+          <h3 class="default-text">Start Exploring</h3>
+        </div>
+      </section>
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/b1ab9fca50.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
 </html>

@@ -1,30 +1,131 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    font-family: Inter, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-main{
-    background-image: url(images/image.png);
-    background-size: cover;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
+main {
+  max-width: 600px;
+  margin: 0 auto;
+}
 
-div.top{
-    color: #fff;
-    padding: 2em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+section.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(images/image.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 250px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div.top {
+  /* border: 2px solid ; */
+  color: #fff;
+  padding: 1.5em;
+  display: flex;
+  text-shadow: 0 0 20px lightgray;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .title {
-    margin: 0;
-    font-size: 2.5rem;
+  margin: 0;
+  font-size: 1.5rem;
 }
 
-div.top>#my-watchlist-btn{
-    background: none;
-    color: white;
-    border: none;
+div.top > #my-watchlist-btn {
+  background: none;
+  color: white;
+  border: none;
+}
+
+.search {
+  max-width: 600px;
+  margin: 0 auto 0;
+  padding: 0.5em;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border: 2px solid #adb5bd;
+  border-radius: 5px;
+}
+
+.search > .input-container > .icon {
+  color: grey;
+}
+.input-container {
+  display: flex;
+  flex: 1;
+  gap: 0.5em;
+  align-items: center;
+}
+.search > .input-container > #search-input {
+  border: none;
+  border-right: 1px solid #adb5bd;
+  width: 60%;
+  display: inline-block;
+  flex-grow: 1;
+}
+
+.search > .input-container > #search-input:focus {
+  outline-width: 0;
+}
+
+.search > #search-btn {
+  margin-left: 0.5em;
+  border: none;
+  background-color: #fff;
+  font-family: Inter sans-serif;
+  font-size: 1.2rem;
+  color: #adb5bd;
+}
+
+.search > #search-btn:hover {
+  color: #495057;
+}
+
+main > .movies {
+  padding: 3em 2em 2em;
+  /* border: 2px solid #495057; */
+  min-height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #121212; */
+}
+
+main > .movies > .movie-container {
+  width: 100%;
+  padding: 2em 1.5em;
+  /* border: 2px solid green; */
+}
+
+.film-icon,
+.default-text {
+  margin: 0;
+}
+
+.film-icon {
+  display: block;
+  width: 150px;
+  opacity: 50%;
+  margin: 0 auto;
+}
+
+.default-text {
+  color: #dfdddd;
+  text-align: center;
+  margin-top: 0.5em;
 }
